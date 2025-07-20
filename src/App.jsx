@@ -15,7 +15,7 @@ function App() {
     } else {
       setFilteredJobs(
         jobs.filter((job) =>
-          tags.map((tag) =>
+          tags.every((tag) =>
             [
               job.role,
               job.level,
