@@ -1,17 +1,15 @@
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import Home from "./Components/Home";
 
 function App() {
-  return (
-    <>
-      <HashRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </HashRouter>
-    </>
-  );
+  let routing = createHashRouter([
+    {
+      path: "/",
+      element: <Home />,
+    },
+  ]);
+  return <RouterProvider router={routing}></RouterProvider>;
 }
 
 export default App;
