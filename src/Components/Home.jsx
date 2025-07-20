@@ -41,7 +41,7 @@ export default function Home() {
             className="h-20 block lg:hidden object-cover w-full"
             alt="Header background"
           />
-          <div className="absolute flex flex-col items-center justify-center w-2/3 mx-auto mt-20 p-5">
+          <div className="absolute flex flex-col items-center justify-center w-2/3 mx-auto mt-28 p-5">
             <SearchBar onTagChange={handleTagChange} />
           </div>
         </div>

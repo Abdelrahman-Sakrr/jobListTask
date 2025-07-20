@@ -19,7 +19,7 @@ function AppContent() {
 // Create router instance
 const router = createBrowserRouter([
   {
-    path: "/*",
+    path: "*/**",
     element: <AppContent />,
   },
 ]);
